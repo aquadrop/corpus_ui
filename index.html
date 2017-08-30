@@ -56,6 +56,13 @@
                 知识图谱</span>
             </a>
           </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="KnowledgeGraph">
+            <a class="nav-link" href="#">
+              <i class="fa fa-fw fa-dashboard"></i>
+              <span class="nav-link-text">
+                搜索</span>
+            </a>
+          </li>
         </ul>
         <ul class="navbar-nav sidenav-toggler">
           <li class="nav-item">
@@ -150,16 +157,31 @@
 	  			</label>
 			</div>
 		</div>
-		<div class="container" id="sale_container" style="display:none">
+		<div class="container" id="root_container" style="display:none">
 			<div class="form-check form-check-inline">
 	  			<label class="form-check-label">
-	    			<input class="form-check-input" type="radio" name="sale1" id="purchase_radio" value="chat"> 购物
+	    			<input class="form-check-input" type="radio" name="root" id="purchase_radio" value="chat"> 购物
 	  			</label>
 			</div>
 			<div class="form-check form-check-inline">
 	  			<label class="form-check-label">
-	    			<input class="form-check-input" type="radio" name="sale1" id="consume_radio" value="chat"> 吃饭
+	    			<input class="form-check-input" type="radio" name="root" id="consume_radio" value="chat"> 吃饭
 	  			</label>
+			</div>
+			<div class="container" id="sale_container" style="display:none">
+				<!-- <div class="form-check form-check-inline">
+		  			<label class="form-check-label">
+		    			<input class="form-check-input" type="radio" name="purchase" id="shoe_radio" value="chat"> 鞋子
+		  			</label>
+				</div> -->
+			</div>
+			<div class="container" id="consume_container" style="display:none">
+				<div class="form-check form-check-inline">
+		  			<label class="form-check-label">
+		    			<input class="form-check-input" type="radio" name="purchase" id="shoe_radio" value="chat"> 鞋子
+		  			</label>
+				</div>
+			</div>
 			</div>
 		</div>
 		<hr class="my-4">
@@ -245,11 +267,32 @@
 		$(document).ready(function(){
     		$("#scene_container").click(function(){
     			if (document.getElementById("sale_radio").checked == true) {
-    				$("#sale_container").show(500);
+    				$("#root_container").show(250);
     			} else {
-    				$("#sale_container").hide(500);
+    				$("#root_container").hide(250);
     			}
-    	});
+    		});
+	    	$("#root_container").click(function(){
+	    			if (document.getElementById("purchase_radio").checked == true) {
+	    				$("#sale_container").show(250);
+	    			} else {
+	    				$("#sale_container").hide(250);
+	    			}
+	    			if (document.getElementById("consume_radio").checked == true) {
+	    				$("#consume_container").show(250);
+	    			} else {
+	    				$("#consume_container").hide(250);
+	    			}
+	    	});
+	    	var list = "衣服,鞋子,母婴,手机数码,家电,美妆,箱包,运动户外,家居用品,珠宝,医药,图书,食品百货,鲜花,玩具,办公用品,学习用品,手表,护肤".split(",")
+	    	var container = document.getElementById("sale_container")
+	    	for (i = 0; i <list.length; i++) {
+	    		container.innerHTML +=
+	    		'<div class="form-check form-check-inline"><label class="form-check-label">' + 
+'<input class="form-check-input" type="radio" name="purchase" id="shoe_radio" value="chat"> ' + list[i] + 
+		  			'</label>' +
+				'</div>'
+	    	}
 });
 </script>
 
