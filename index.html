@@ -284,15 +284,31 @@
 	    				$("#consume_container").hide(250);
 	    			}
 	    	});
-	    	var list = "衣服,鞋子,母婴,手机数码,家电,美妆,箱包,运动户外,家居用品,珠宝,医药,图书,食品百货,鲜花,玩具,办公用品,学习用品,手表,护肤".split(",")
-	    	var container = document.getElementById("sale_container")
-	    	for (i = 0; i <list.length; i++) {
-	    		container.innerHTML +=
+	    	var list = "衣服,鞋子,母婴,手机数码,家电,美妆,箱包,运动户外,家居用品,珠宝,医药,图书,食品百货,鲜花,玩具,办公用品,学习用品,手表,护肤";
+	    	var ll = list.split(",");
+	    	var container = document.getElementById("sale_container");
+	    	container.innerHTML += '<div class="container" id="1_container"></div>'
+	    	container = document.getElementById("1_container");
+	    	for (i = 0; i <ll.length; i++) {
+	    		container.innerHTML += 
 	    		'<div class="form-check form-check-inline"><label class="form-check-label">' + 
-'<input class="form-check-input" type="radio" name="purchase" id="shoe_radio" value="chat"> ' + list[i] + 
+'<input class="form-check-input" type="radio" name="1" id="shoe_radio" value="chat"> ' + ll[i] + 
 		  			'</label>' +
-				'</div>'
+				'</div>';
 	    	}
+	    	var list="凉鞋,拖鞋,高跟鞋,靴子,皮鞋,运动鞋,休闲鞋,中跟鞋,厚底鞋,内增高,平底鞋,帆布鞋,单鞋,豆豆鞋,短靴,马丁靴,棉鞋,雪地靴,板鞋,篮球鞋,长靴"
+			var ll = list.split(",");
+	    	var container = document.getElementById("sale_container");
+	    	container.innerHTML += '<div class="container" id="2_container"></div>'
+	    	container = document.getElementById("2_container");
+	    	for (i = 0; i <ll.length; i++) {
+	    		container.innerHTML += 
+	    		'<div class="form-check form-check-inline"><label class="form-check-label">' + 
+'<input class="form-check-input" type="radio" name="2" id="shoe_radio" value="chat"> ' + ll[i] + 
+		  			'</label>' +
+				'</div>';
+	    	}
+
 });
 </script>
 
