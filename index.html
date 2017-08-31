@@ -1,199 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>SB Admin - Start Bootstrap Template</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Corpus Collector</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap core CSS -->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<!-- Custom fonts for this template -->
+	<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    <!-- Plugin CSS -->
-    <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+	<!-- Plugin CSS -->
+	<link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/sb-admin.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="css/sb-admin.css" rel="stylesheet">
 
-  </head>
+</head>
 
-  <body class="fixed-nav sticky-footer bg-dark" id="page-top">
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-      <a class="navbar-brand" href="#">Start Bootstrap</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
-          <li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Corpus_Collect">
-            <a class="nav-link" href="#">
-              <i class="fa fa-fw fa-dashboard"></i>
-              <span class="nav-link-text">
-                语料收录</span>
-            </a>
-          </li>
-          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Corpus">
-            <a class="nav-link" href="#">
-              <i class="fa fa-fw fa-area-chart"></i>
-              <span class="nav-link-text">
-                语料查阅</span>
-            </a>
-          </li>
-          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="KnowledgeGraph">
-            <a class="nav-link" href="#">
-              <i class="fa fa-fw fa-dashboard"></i>
-              <span class="nav-link-text">
-                知识图谱</span>
-            </a>
-          </li>
-          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="KnowledgeGraph">
-            <a class="nav-link" href="#">
-              <i class="fa fa-fw fa-dashboard"></i>
-              <span class="nav-link-text">
-                搜索</span>
-            </a>
-          </li>
-        </ul>
-        <ul class="navbar-nav sidenav-toggler">
-          <li class="nav-item">
-            <a class="nav-link text-center" id="sidenavToggler">
-              <i class="fa fa-fw fa-angle-left"></i>
-            </a>
-          </li>
-        </ul>
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle mr-lg-2" href="#" id="messagesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fa fa-fw fa-envelope"></i>
-              <span class="d-lg-none">Messages
-                <span class="badge badge-pill badge-primary">12 New</span>
-              </span>
-              <span class="new-indicator text-primary d-none d-lg-block">
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+		<a class="navbar-brand" href="#">Start Bootstrap</a>
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+				<li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Corpus_Collect">
+					<a class="nav-link" href="#">
+						<i class="fa fa-fw fa-dashboard"></i>
+						<span class="nav-link-text">
+							语料收录</span>
+						</a>
+					</li>
+					<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Corpus">
+						<a class="nav-link" href="#">
+							<i class="fa fa-fw fa-area-chart"></i>
+							<span class="nav-link-text">
+								语料查阅</span>
+							</a>
+						</li>
+						<li class="nav-item" data-toggle="tooltip" data-placement="right" title="KnowledgeGraph">
+							<a class="nav-link" href="#">
+								<i class="fa fa-fw fa-dashboard"></i>
+								<span class="nav-link-text">
+									知识图谱</span>
+								</a>
+							</li>
+							<li class="nav-item" data-toggle="tooltip" data-placement="right" title="KnowledgeGraph">
+								<a class="nav-link" href="#">
+									<i class="fa fa-fw fa-dashboard"></i>
+									<span class="nav-link-text">
+										搜索</span>
+									</a>
+								</li>
+							</ul>
+							<ul class="navbar-nav sidenav-toggler">
+								<li class="nav-item">
+									<a class="nav-link text-center" id="sidenavToggler">
+										<i class="fa fa-fw fa-angle-left"></i>
+									</a>
+								</li>
+							</ul>
+							<ul class="navbar-nav ml-auto">
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle mr-lg-2" href="#" id="messagesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<i class="fa fa-fw fa-envelope"></i>
+										<span class="d-lg-none">Messages
+											<span class="badge badge-pill badge-primary">12 New</span>
+										</span>
+										<span class="new-indicator text-primary d-none d-lg-block">
                 <!-- <i class="fa fa-fw fa-circle"></i>
                 <span class="number">0</span> -->
-              </span>
-            </a>
-          
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle mr-lg-2" href="#" id="alertsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fa fa-fw fa-bell"></i>
-              <span class="d-lg-none">Alerts
-                <span class="badge badge-pill badge-warning">6 New</span>
-              </span>
-              <span class="new-indicator text-warning d-none d-lg-block">
+            </span>
+        </a>
+
+    </li>
+    <li class="nav-item dropdown">
+    	<a class="nav-link dropdown-toggle mr-lg-2" href="#" id="alertsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    		<i class="fa fa-fw fa-bell"></i>
+    		<span class="d-lg-none">Alerts
+    			<span class="badge badge-pill badge-warning">6 New</span>
+    		</span>
+    		<span class="new-indicator text-warning d-none d-lg-block">
                 <!-- <i class="fa fa-fw fa-circle"></i>
                 <span class="number">6</span> -->
-              </span>
-            </a>
-            
-          </li>
-          <li class="nav-item">
-            <form class="form-inline my-2 my-lg-0 mr-lg-2">
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search for...">
-                <span class="input-group-btn">
-                  <button class="btn btn-primary" type="button">
-                    <i class="fa fa-search"></i>
-                  </button>
-                </span>
-              </div>
-            </form>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
-              <i class="fa fa-fw fa-sign-out"></i>
-              Logout</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+            </span>
+        </a>
 
-    <div class="content-wrapper">
+    </li>
+    <li class="nav-item">
+    	<form class="form-inline my-2 my-lg-0 mr-lg-2">
+    		<div class="input-group">
+    			<input type="text" class="form-control" placeholder="Search for...">
+    			<span class="input-group-btn">
+    				<button class="btn btn-primary" type="button">
+    					<i class="fa fa-search"></i>
+    				</button>
+    			</span>
+    		</div>
+    	</form>
+    </li>
+    <li class="nav-item">
+    	<a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+    		<i class="fa fa-fw fa-sign-out"></i>
+    		Logout</a>
+    	</li>
+    </ul>
+</div>
+</nav>
 
-      <div class="container-fluid">
+<div class="content-wrapper">
 
-        <!-- Breadcrumbs -->
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="#">语料</a>
-          </li>
-          <li class="breadcrumb-item active">语料收录</li>
-        </ol>
-        <div class="input-group">
-        	<span class="input-group-addon" id="basic-addon2">问题</span>
-  			<input type="text" class="form-control" placeholder="place your question here..." aria-label="user input" aria-describedby="basic-addon2">
+	<div class="container-fluid">
+
+		<!-- Breadcrumbs -->
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item">
+				<a href="#">语料</a>
+			</li>
+			<li class="breadcrumb-item active">语料收录</li>
+		</ol>
+		<div class="input-group">
+			<span class="input-group-addon" id="basic-addon2">问题</span>
+			<input type="text" class="form-control" placeholder="place your question here..." aria-label="user input" aria-describedby="basic-addon2">
 		</div>
 		<hr class="my-4">
 		<div class="container" id="scene_container">
 			<div class="form-check form-check-inline" id="sale_form_check">
-	  			<label class="form-check-label">
-	    			<input class="form-check-input" type="radio" name="scene" id="sale_radio" value="sale"> 业务对话
-	  			</label>
+				<label class="form-check-label">
+					<input class="form-check-input" type="radio" name="scene" id="sale_radio" value="sale"> 业务对话
+				</label>
 			</div>
 			<div class="form-check form-check-inline">
-	  			<label class="form-check-label">
-	    			<input class="form-check-input" type="radio" name="scene" id="qa_radio" value="qa"> 问答
-	  			</label>
+				<label class="form-check-label">
+					<input class="form-check-input" type="radio" name="scene" id="qa_radio" value="qa"> 问答
+				</label>
 			</div>
 			<div class="form-check form-check-inline">
-	  			<label class="form-check-label">
-	    			<input class="form-check-input" type="radio" name="scene" id="greeting_ratio" value="greeting"> 旺宝开放闲聊
-	  			</label>
+				<label class="form-check-label">
+					<input class="form-check-input" type="radio" name="scene" id="greeting_ratio" value="greeting"> 旺宝开放闲聊
+				</label>
 			</div>
 			<div class="form-check form-check-inline">
-	  			<label class="form-check-label">
-	    			<input class="form-check-input" type="radio" name="scene" id="open_chat_ratio" value="chat"> 开放闲聊
-	  			</label>
+				<label class="form-check-label">
+					<input class="form-check-input" type="radio" name="scene" id="open_chat_ratio" value="chat"> 开放闲聊
+				</label>
 			</div>
 		</div>
-		<div class="container" id="root_container" style="display:none">
-			<div class="form-check form-check-inline">
-	  			<label class="form-check-label">
-	    			<input class="form-check-input" type="radio" name="root" id="purchase_radio" value="chat"> 购物
-	  			</label>
-			</div>
-			<div class="form-check form-check-inline">
-	  			<label class="form-check-label">
-	    			<input class="form-check-input" type="radio" name="root" id="consume_radio" value="chat"> 吃饭
-	  			</label>
-			</div>
-			<div class="container" id="sale_container" style="display:none">
-				<!-- <div class="form-check form-check-inline">
-		  			<label class="form-check-label">
-		    			<input class="form-check-input" type="radio" name="purchase" id="shoe_radio" value="chat"> 鞋子
-		  			</label>
-				</div> -->
-			</div>
-			<div class="container" id="consume_container" style="display:none">
-				<div class="form-check form-check-inline">
-		  			<label class="form-check-label">
-		    			<input class="form-check-input" type="radio" name="purchase" id="shoe_radio" value="chat"> 鞋子
-		  			</label>
-				</div>
-			</div>
-			</div>
+		<div class="container" id="sale_container" style="display:none">
+			
 		</div>
 		<hr class="my-4">
 		<div class="input-group">
-        	<span class="input-group-addon" id="basic-addon2">答案</span>
-  			<input type="text" class="form-control" placeholder="place your answer here..." aria-label="machine answer" aria-describedby="basic-addon2">
+			<span class="input-group-addon" id="basic-addon2">答案</span>
+			<input type="text" class="form-control" placeholder="place your answer here..." aria-label="machine answer" aria-describedby="basic-addon2">
 		</div>
 		<hr class="my-4">
 		<button type="button" class="btn btn-primary btn-lg btn-block">提交</button>
-        <!-- Icon Cards -->
+		<!-- Icon Cards -->
 
-        <!-- Area Chart Example -->
+		<!-- Area Chart Example -->
         <!-- <div class="card mb-3">
           <div class="card-header">
             <i class="fa fa-area-chart"></i>
@@ -205,113 +181,136 @@
           <div class="card-footer small text-muted">
             Updated yesterday at 11:59 PM
           </div>
-        </div> -->
+      </div> -->
 
-        <!-- Example Tables Card -->
+      <!-- Example Tables Card -->
 
 
-      </div>
-      <!-- /.container-fluid -->
+  </div>
+  <!-- /.container-fluid -->
 
-    </div>
-    <!-- /.content-wrapper -->
+</div>
+<!-- /.content-wrapper -->
 
-    <footer class="sticky-footer">
-      <div class="container">
-        <div class="text-center">
-          <small>Copyright &copy; ECOVACS 2017</small>
-        </div>
-      </div>
-    </footer>
+<footer class="sticky-footer">
+	<div class="container">
+		<div class="text-center">
+			<small>Copyright &copy; ECOVACS 2017</small>
+		</div>
+	</div>
+</footer>
 
-    <!-- Scroll to Top Button -->
-    <a class="scroll-to-top rounded" href="#page-top">
-      <i class="fa fa-angle-up"></i>
-    </a>
+<!-- Scroll to Top Button -->
+<a class="scroll-to-top rounded" href="#page-top">
+	<i class="fa fa-angle-up"></i>
+</a>
 
-    <!-- Logout Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            Select "Logout" below if you are ready to end your current session.
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-            <a class="btn btn-primary" href="login.html">Logout</a>
-          </div>
-        </div>
-      </div>
-    </div>
+<!-- Logout Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				Select "Logout" below if you are ready to end your current session.
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+				<a class="btn btn-primary" href="login.html">Logout</a>
+			</div>
+		</div>
+	</div>
+</div>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/popper/popper.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/chart.js/Chart.min.js"></script>
-    <script src="vendor/datatables/jquery.dataTables.js"></script>
-    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="vendor/chart.js/Chart.min.js"></script>
+<script src="vendor/datatables/jquery.dataTables.js"></script>
+<script src="vendor/datatables/dataTables.bootstrap4.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/sb-admin.min.js"></script>
-    <script>
-		$(document).ready(function(){
-    		$("#scene_container").click(function(){
-    			if (document.getElementById("sale_radio").checked == true) {
-    				$("#root_container").show(250);
-    			} else {
-    				$("#root_container").hide(250);
-    			}
-    		});
-	    	$("#root_container").click(function(){
-	    			if (document.getElementById("purchase_radio").checked == true) {
-	    				$("#sale_container").show(250);
-	    			} else {
-	    				$("#sale_container").hide(250);
-	    			}
-	    			if (document.getElementById("consume_radio").checked == true) {
-	    				$("#consume_container").show(250);
-	    			} else {
-	    				$("#consume_container").hide(250);
-	    			}
-	    	});
-	    	var list = "衣服,鞋子,母婴,手机数码,家电,美妆,箱包,运动户外,家居用品,珠宝,医药,图书,食品百货,鲜花,玩具,办公用品,学习用品,手表,护肤";
-	    	var ll = list.split(",");
-	    	var container = document.getElementById("sale_container");
-	    	container.innerHTML += '<div class="container" id="1_container"></div>'
-	    	container = document.getElementById("1_container");
-	    	for (i = 0; i <ll.length; i++) {
-	    		container.innerHTML += 
-	    		'<div class="form-check form-check-inline"><label class="form-check-label">' + 
-'<input class="form-check-input" type="radio" name="1" id="shoe_radio" value="chat"> ' + ll[i] + 
-		  			'</label>' +
-				'</div>';
-	    	}
-	    	var list="凉鞋,拖鞋,高跟鞋,靴子,皮鞋,运动鞋,休闲鞋,中跟鞋,厚底鞋,内增高,平底鞋,帆布鞋,单鞋,豆豆鞋,短靴,马丁靴,棉鞋,雪地靴,板鞋,篮球鞋,长靴"
+<!-- Custom scripts for this template -->
+<script src="js/sb-admin.min.js"></script>
+<script>
+	var dic = {"ROOT#intention":"购物,吃饭",
+	"ROOT#price":"低,中,高",
+	"ROOT#discount":"有,无",
+	"ROOT#mind":"随便",
+	"ROOT#queue":"要排队",
+	"购物":"衣服,鞋子,母婴,手机数码,家电,美妆,箱包,运动户外,家居用品,珠宝,医药,图书,食品百货,鲜花,玩具,办公用品,学习用品,手表,护肤",
+	"购物#gender":"男,女",
+	"购物#age":"小孩,青年,中年,老年",
+	"鞋子#category":"凉鞋,拖鞋,高跟鞋,靴子,皮鞋,运动鞋,休闲鞋,中跟鞋,厚底鞋,内增高,平底鞋,帆布鞋,单鞋,豆豆鞋,短靴,马丁靴,棉鞋,雪地靴,板鞋,篮球鞋,长靴",
+	"衣服#wear":"上衣,裤子,裙装,其他",
+	"衣服#style":"运动休闲,正装,轻熟女,嘻哈风,百搭,少女风,名媛风,休闲风,小清新,甜美风,OL,通勤风,学院风,韩风,英伦风,复古风,欧美风,日系风,运动风,民族风,中性,田园风,朋克风,洛丽塔,街头风,简约风,波西米亚风",
+	"衣服#category":"裙子,T恤,衬衫,牛仔裤,休闲裤,西服,皮衣,毛衣,外套,风衣,内衣,运动服,皮草,蕾丝衫,雪纺衫,夹克,羊绒衫,披风,马甲,棉衣,短外套,羽绒服,针织衫,大衣,卫衣,吊带,小背心,短裤,短袖,呢大衣,连衣裙,棉毛衫,运动裤,阔腿裤",
+	"衣服#season":"春,夏,秋,冬",
+		// "购物#brand":"耐克,阿迪达斯,香奈儿,优衣库,路易威登,爱马仕,范思哲,杜嘉班纳,杰尼亚,古驰,Loro Piana,戴比尔斯,万宝龙,HUGO BOSS,宝格丽,盟可睞,梵克雅宝,罗意威,阿玛尼,Max Mara,TOD'S,迪奥,COACH,莫斯奇诺,恒龙,苹果店,LV,海尔,雅诗兰黛,CPB,劳力士,海蓝之谜",
+		"美妆#category":"香水,面膜,爽肤水,乳,精华,晚霜,防晒霜,眼霜,润唇膏,粉底液,BB霜,粉饼,妆前乳,隔离,散粉,眼线液,眼线笔,眼影,眉笔,睫毛膏,腮红,口红,唇彩,卸妆水,卸妆油,气垫BB,洗面奶,眉粉,唇膜,手膜,护手霜,护肤品",
+		"家居用品#category":"床上用品,厨房用品,家具装饰,电器用品,日常用品",
+		"手机数码#category":"手机,耳机,录音笔,摄像机,相机,音响,GPS导航仪,机顶盒,储存卡,学习机,MP3,MP4,MP5,平板电脑,DVD机,移动电源,手机配件,路由器,智能手表,电脑",
+		"家电#category":"冰箱,洗衣机,空调,电视机,扫地机器人,擦窗机器人,风扇,加湿器,空气净化器,咖啡机,电磁炉,油烟机,电饭煲,豆浆机,微波炉,电水壶,料理机,热水器,燃气灶,旺宝,台灯,烤箱,净水器,电高压锅,榨汁机,电暖器,消毒柜,洗碗机,面包机,除湿器,熨斗"};
+		for (key in dic) {
+			var list = dic[key];
 			var ll = list.split(",");
-	    	var container = document.getElementById("sale_container");
-	    	container.innerHTML += '<div class="container" id="2_container"></div>'
-	    	container = document.getElementById("2_container");
-	    	for (i = 0; i <ll.length; i++) {
-	    		container.innerHTML += 
-	    		'<div class="form-check form-check-inline"><label class="form-check-label">' + 
-'<input class="form-check-input" type="radio" name="2" id="shoe_radio" value="chat"> ' + ll[i] + 
-		  			'</label>' +
-				'</div>';
-	    	}
+			var container = document.getElementById("sale_container");
+			var node = key.split('#')[0];
+			if (node == 'ROOT') {
+				container.innerHTML += `<div class="container-fluid ${node}_container_class" id="${key}_container"><div class="row"><div class="col">${key}</div><div class="col" id="${key}_col"></div></div>`
+			} else {
+				container.innerHTML += `<div class="container-fluid ${node}_container_class" id="${key}_container" style="display:none"><div class="row"><div class="col">${key}</div><div class="col" id="${key}_col"></div></div>`
+			}
+			var container = document.getElementById(`${key}_col`);
+			for (i = 0; i <ll.length; i++) {
+				child = ll[i]
+				container.innerHTML += 
+				`<div class="form-check form-check-inline ${child}_option_class"><label class="form-check-label">` + 
+				`<input class="form-check-input" type="radio" name="${key}" id="${child}_radio" value="chat">${child}` +
+				'</label>' +
+				'</div></div>';
+			}
+		}
+		$(document).ready(function(){
+			$("#scene_container").click(function(){
+				if (document.getElementById("sale_radio").checked == true) {
+					$("#sale_container").show(250);
+				} else {
+					$("#sale_container").hide(250);
+				}
+			});
 
-});
-</script>
+			for (key in dic) {
+				var node = key.split('#')[0];
+				// console.log(list);
+				$(`.${node}_container_class`).click(function(){
+					var list = dic[key];
+					var ll = list.split(",");
+					for (i = 0; i < ll.length; i++) {
+						var child = ll[i];
+						console.log(child + ' ' + key + `.${node}_container_class`);
+						if (document.getElementById(`${child}_radio`).checked == true) {
+							console.log(`.${child}_class`);
+							$(`.${child}_container_class`).show(250);
+						} else {
+							$(`.${child}_container_class`).hide(250);
+						}
+					}
 
-  </body>
+				});
+				
+			}
+
+		});
+	</script>
+
+</body>
 
 </html>
